@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Log In success";
+}
+
+@section Styles{
+    <link rel="stylesheet"  href="~/css/Alart.css"/>
+}
+
+<div class="alert alert-success">
+    @*<div class="icon__wrapper">
+        <span class="mdi mdi-alert-outline">
+            <i class="use"></i>
+        </span>
+    </div>*@
+    <p>Log In success</p>
+    <span class="mdi mdi-open-in-new open"></span>
+    <span class="mdi mdi-close close"></span>
+    <form asp-action="LogOut" asp-controller="Account">
+        <button type="submit" class="btn btn-secondary">log out</button>
+    </form>
+</div>
